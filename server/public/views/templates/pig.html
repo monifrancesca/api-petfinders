@@ -1,0 +1,22 @@
+<div class="section main">
+    <div class="container">
+        <div class="row">
+            <div class="one-third column">
+                <h2>{{animal.name.$t}}</h2>
+                <p>{{animal.description.$t}}</p>
+            </div>
+            <div class="one-third column">
+                <img  class="u-max-full-width" ng-src="{{animal.media.photos.photo[2].$t}}" />
+            </div>
+            <div class="one-third column">
+                <iframe src="https://www.google.com/maps/embed/v1/place?q=Empire%20State%20Building
+                  &zoom=13
+                  &attribution_source=Google+Maps+Embed+API
+                  &attribution_web_url=https://developers.google.com/maps/documentation/embed/
+                  &key=AIzaSyAbGMi7GOTpONoICMLXmN0-XbgsH6QP230">
+                </iframe>
+                <p>{{animal.contact.city.$t}}, {{animal.contact.state.$t}}</p>
+            </div>
+        </div>
+    </div>
+</div>

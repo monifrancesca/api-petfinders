@@ -1,0 +1,106 @@
+nav ul, .contact ul {
+    list-style: none;
+    font-size: 0;
+}
+
+nav li, .contact li {
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+nav li {
+    width: 50%;
+}
+
+
+
+
+/* MEDIA QUERIES STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (min-width: 550px) {
+
+    nav li {
+        width: auto;
+    }
+
+    a {
+        box-shadow: 0 8px #f4ba04;
+    }
+
+    nav a {
+        padding: 7px;
+        border-right: 1px solid #fabd03;
+        width: 80px;
+    }
+
+    nav li:nth-child(2n+1) a:after {
+        content: none;
+    }
+
+    nav li:last-child a {
+        border-right: none;
+    }
+
+    header a:hover, .about a:hover {
+        box-shadow: 0 8px #f4ba04;
+    }
+
+    header a:active, .about a:active {
+        box-shadow: 0 4px #f4ba04;
+        -webkit-transform: translateY(4px);
+        -ms-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+
+    .about .one-third {
+        margin-top: 0;
+    }
+
+    .about .one-third a {
+        width: 35%;
+    }
+
+    .contact .creator a {
+        box-shadow: none;
+    }
+
+}
+
+
+
+@media (min-width: 750px) {
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 2.8rem;
+    }
+
+    h4 {
+        font-size: 2.4rem;
+    }
+
+
+}
+
+
+
+/* Mobile first queries */
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}

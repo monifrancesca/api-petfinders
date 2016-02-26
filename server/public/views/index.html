@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>API Pet Page</title>
+    <link rel="stylesheet" href="../vendors/skeleton.css" />
+    <link rel="stylesheet" href="../vendors/normalize.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+    <!-- Angular -->
+    <script type="text/javascript" src="../vendors/angular.min.js"></script>
+    <script type="text/javascript" src="../vendors/angular-route.min.js"></script>
+    <script type="text/javascript" src="../scripts/ang_app.js"></script>
+
+    <script type="text/javascript" src="/scripts/controllers/dogController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/catController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/pigController.js"></script>
+
+
+</head>
+<body>
+    <div class="section header">
+        <div class="container">
+            <div class="row">
+                <header ng-include="'../../views/templates/header.html'" class="jumbotron text-center"></header>
+            </div>
+        </div>
+    </div>
+
+    <div class="section nav">
+        <div class="container">
+            <div class="row">
+                <div ng-include="'../../views/templates/nav.html'"></div>
+            </div>
+        </div>
+    </div>
+
+
+                <div ng-view>
+
+                </div>
+
+
+    <div class="section footer">
+        <div class="container">
+            <div class="row">
+                <div ng-include="'../../views/templates/footer.html'"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
